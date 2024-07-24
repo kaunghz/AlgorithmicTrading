@@ -1,6 +1,6 @@
 # Algorithmic Trading Strategies
 
-After interning at a quant trading company, I became intrigued by the US stock market and how to profit from it. This curiosity led me to explore personal finance and investing. I recently wrote an article on why you should invest early and harness the power of compound interest. You can read it [here](https://khznote.notion.site/Invest-early-the-power-of-compound-interest-3b5a087607c2416fadf653e370ad3223).
+After interning at a quant trading company, I became interested the US stock market and how to profit from it. This curiosity led me to learn personal finance and investing. I recently wrote an article on why you should invest early. You can read it [here](https://khznote.notion.site/Invest-early-the-power-of-compound-interest-3b5a087607c2416fadf653e370ad3223).
 
 With a background in computer science, I created this repository to develop and backtest algorithmic trading strategies using the market data from the past 2 years (720 days to be exact).
 
@@ -43,6 +43,6 @@ Total HOLD amount $217763.78 - Total HOLD profit percent 117.76%
 
 ### Analysis
 
-The results indicate that the algorithm effectively maximizes profit and minimizes losses. For instance, when backtested with NVDA, the algorithm yielded a profit percent of **826.25%** compared to **551.89%** from a simple buy-and-hold strategy since the beginning at low price 2 years ago. This demonstrates that the algorithm outperforms most of the stock market and manages risk through its dynamic low threshold bar.
+The results indicate that the algorithm effectively maximizes profit and minimizes losses. For instance, when backtested with NVDA, the algorithm yielded a profit percent of **826.25%** compared to **551.89%** from a simple buy-and-hold strategy since the beginning at low price 2 years ago. This shows that the algorithm outperforms most of the stock market and manages risk through its dynamic low threshold bar.
 
 Feel free to explore and contribute to the repository if you have any suggestions or improvements!

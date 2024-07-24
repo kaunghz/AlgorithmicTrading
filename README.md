@@ -4,17 +4,18 @@ With some computer science background, I created an algorithmic trading strategi
 As of now, I developed an algorithm based off of one of the simple algorithmic trading strategies, [Trailing Stop-Loss](https://www.investopedia.com/articles/trading/08/trailing-stop-loss.asp). The details of the algorithm can be found in Strategy/trailingStop.py. Then, I backtested with the data from 720 days before.
 
 For back testing, I tested with the list of diversed US stocks, most volatile stocks, big tech stocks. This strategy OUTPERFORMED everything compared to you just hold them for 2 years. This strategy is even more visible in fluctuating and volatile market like TESLA. Some backtest results are:
-```html
+```
 Backtest on most volatile stocks including 'TSLA', 'OVV', 'OPEN', 'QS', 'MP', 'NIO', 'HRI', 'RUN', 'COIN', 'PLTR', 'CLF', 'SHOP'
 ----------Summary----------
 Original balance $100000.00
-Total TS amount $128809.16 - Total TS profit percent <span style="color:green; font-weight:bold;">28.81%<span>
+Total TS amount $128809.16 - Total TS profit percent 28.81%
 Total HOLD amount $106521.39 - Total HOLD profit percent 6.52%
 ```
-```html
+```
 Backtest with Big tech stocks 'AAPL', 'MSFT', 'GOOGL', 'NVDA', 'NFLX', 'QQQ', 'SPY', 'TSLA'
 ----------Summary----------
 Original balance $100000.00
-Total TS amount $269225.14 - Total TS profit percent <span style="color:green; font-weight:bold;">169.23%<span>
+Total TS amount $269225.14 - Total TS profit percent 169.23%
 Total HOLD amount $217763.78 - Total HOLD profit percent 117.76%
 ```
+From the result, even in some volatile situations, the algorithm tries to maximize the profit and minimize the loss amount. If you backtested this with the most recent popular stock, NVDA; the profit percent is 826.25% with my algorithm as compared to 551.89% if you just hold all since the beginning of the low price 720 days ago. This shows it outperforms majority of the stock market and minimize the loss by the low threshold bar to sell.

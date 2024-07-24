@@ -2,7 +2,19 @@
 
 After interning at a quant trading company, I became intrigued by the US stock market and how to profit from it. This curiosity led me to explore personal finance and investing. I recently wrote an article on why you should invest early and harness the power of compound interest. You can read it [here](https://khznote.notion.site/Invest-early-the-power-of-compound-interest-3b5a087607c2416fadf653e370ad3223).
 
-With a background in computer science, I created this repository to develop and backtest algorithmic trading strategies using data from the past 2 years (720 days to be exact). 
+With a background in computer science, I created this repository to develop and backtest algorithmic trading strategies using the market data from the past 2 years (720 days to be exact).
+
+## Requirements
+
+To run this project, you will need:
+- **Python 3**: Ensure you have Python 3 installed on your system.
+- **yahoo_fin**: A library to fetch stock market data. You can install it using pip.
+
+Install the required packages using:
+
+```bash
+pip install yahoo_fin
+```
 
 ## Trailing Stop-Loss Algorithm
 

@@ -72,7 +72,6 @@ class trailingStop:
                         self.low_threshold = self.low_threshold * 0.95 # to maximize profit
                         self.high_threshold = price + (self.high_threshold * 0.3)
                     last_price = price
-            idx += 1
         if bought:
             self.balance += (price * self.stockOwned)
             self.stockOwned = 0

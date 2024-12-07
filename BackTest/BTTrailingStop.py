@@ -2,7 +2,7 @@ from MarketData.getData import MarketData
 from Strategy.trailingStop import trailingStop
 
 class BTTrailingStop:
-    def __init__(self, tickers, balance=100000):
+    def __init__(self, tickers, balance=10000):
         self.tickers = sorted(tickers)
         self.balance = balance
 
@@ -42,7 +42,8 @@ class BTTrailingStop:
     def _calculate_hold_profit(self, ticker, buy_price, sell_price, org_amount):
         profit = sell_price - buy_price
         stocksOwned = org_amount // buy_price
-        finalAmount = org_amount + (stocksOwned * profit)
-        percent = self._profit_percent(org_amount, finalAmount)
-        print("{} - HOLD profit amount ${:.2f} - HOLD profit percent {:.2f}%".format(ticker, finalAmount, percent))
-        return finalAmount
+        # remaining_amount = org_amount - (stocksOwned * buy_price)
+        final_amount = org_amount + (stocksOwned * profit)
+        percent = self._profit_percent(org_amount, final_amount)
+        print("{} - HOLD profit amount ${:.2f} - HOLD profit percent {:.2f}%".format(ticker, final_amount, percent))
+        return final_amount

@@ -27,9 +27,10 @@ if __name__ == "__main__":
         "BA",    # The Boeing Company
         "UAL",    # United Airlines Holdings, Inc.
     ]
-    tickers = ['AAPL', 'MSFT', 'GOOGL', 'NVDA', 'NFLX', 'QQQ', 'SPY', 'TSLA']
+    # tickers = ['AAPL', 'MSFT', 'GOOGL', 'NVDA', 'NFLX', 'QQQ', 'SPY', 'TSLA']
 
     # some most volatile stocks from https://finance.yahoo.com/news/16-most-volatile-stocks-buy-141732618.html
-    tickers = ['TSLA', 'OVV', 'OPEN', 'QS', 'MP', 'NIO', 'HRI', 'RUN', 'COIN', 'PLTR', 'CLF', 'SHOP']
+    # tickers = ['TSLA', 'OVV', 'OPEN', 'QS', 'MP', 'NIO', 'HRI', 'RUN', 'COIN', 'PLTR', 'CLF', 'SHOP']
+    tickers = ["TSLA", "NVDA", "QQQ", "NIO", "GOOG"]
     trailing_stop = BTTrailingStop(tickers)
     trailing_stop.run()
